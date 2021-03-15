@@ -590,3 +590,144 @@ else{
 }
 
 /*--------------------------------------------------------------*/
+
+
+// CHAPTER # 14-16
+
+// Task # 1
+var StdNames = [];
+
+//  Task # 2
+
+
+// Task # 3
+
+var stringArray = ["Hasan","Abdullah","JBT"];
+alert("Welcome "+stringArray[1]);
+
+// Task # 4
+
+var intArray = [0,1,2,3,4,5];
+alert("index zero has "+intArray[0]);
+
+// Task # 5
+
+var BoolArray = [true,false];
+alert(BoolArray[1]);
+
+// Task # 6
+
+var MixedArray = [0, "FirstIndex", 2, "ThirdIndex"];
+alert(MixedArray[0]);
+alert(MixedArray[1]);
+
+// Task # 7
+
+var QualificationArray = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil","PhD"];
+document.writeln("Qualifications:".bold()+"<br>"+"1) "+QualificationArray[0]
++"<br>"+"2) "+QualificationArray[1]+"<br>"+"3) "+QualificationArray[2]
++"<br>"+"4) "+QualificationArray[3]+"<br>"+"5) "+QualificationArray[4]
++"<br>"+"6) "+QualificationArray[5]+"<br>"+"7) "+QualificationArray[6]
++"<br>"+"8) "+QualificationArray[7]);
+
+// Task # 8
+
+var Snames = ["Ahsan","itachi","Butt"];
+var score = [320,230,430];
+var TotalMarkss = 500;
+var percIndZero = (score[0]/TotalMarkss)*100, percIndOne = (score[1]/TotalMarkss)*100, percIndTwo = (score[2]/TotalMarkss)*100;
+document.writeln("The score of "+Snames[0]+" is "+score[0]+" and Precentage is: "+percIndZero+"%"+"<br>"
++"The score of "+Snames[1]+" is "+score[1]+" and Precentage is: "+percIndOne+"%"+"<br>"
++"The score of "+Snames[2]+" is "+score[2]+" and Precentage is: "+percIndTwo+"%");
+
+// Task # 9
+
+var colors = [" Red"," Green"," Blue"," Yellow"];
+document.writeln("Colors Array".bold()+"<br>"+"<br>"+"Initial array colors: "+colors);
+var question = prompt("What color do you want to put in the begining?");
+colors.unshift(question);
+document.writeln("<br>"+"<br>"+"After adding new color is the begining: "+colors);
+var question = prompt("What color do you want to put in the End?");
+colors.push(question);
+document.writeln("<br>"+"<br>"+"After adding new color is the End: "+colors);
+var question = prompt("Add one more color in the begining");
+colors.unshift(question);
+var question = prompt("One more color please :D");
+colors.unshift(question);
+document.writeln("<br>"+"<br>"+"After adding 2 new colors is the begining: "+colors);
+colors.shift(question);
+document.writeln("<br>"+"<br>"+"After removing first color from the begining: "+colors);
+colors.pop(question);
+document.writeln("<br>"+"<br>"+"After removing first color from the end: "+colors);
+
+// Task # 10
+
+var StdScore = [];
+var ArrSize = +prompt("Enter number of subjects");
+for(var i=0; i<ArrSize; i++) {
+	StdScore[i] = prompt('Enter marks for subject #' + (i+1));
+}
+document.writeln("Student Scores: ".bold()+StdScore);
+document.writeln("<br>"+"Student Scores in ascending order: ".bold()+StdScore.sort());
+
+// Task # 11
+
+var cities = ["karachi","lahore","peshawar","islamabad","quetta"];
+var selectedCities = [];
+selectedCities = cities.slice(2, 4);
+document.writeln("The cities are: ".bold()+cities);
+document.writeln("<br>"+"Selected cities are: ".bold()+selectedCities);
+
+// Task # 12
+
+var arr1 = ["This", "is", "my","cat"];
+document.writeln("This is array: "+arr1);
+document.write("<br>"+"This is string: "+ arr1.join(" "));
+
+// Task # 13
+
+var fifo = [];
+fifo.push("keyboard");
+fifo.push("mouse");
+fifo.push("printer");
+fifo.push("monitor");
+document.writeln(fifo);
+fifo.shift();
+document.writeln("<br>"+"<br>"+"keyboard removed: "+"<br>"+fifo);
+fifo.shift();
+document.writeln("<br>"+"<br>"+"mouse removed: "+"<br>"+fifo);
+fifo.shift();
+document.writeln("<br>"+"<br>"+"printer removed: "+"<br>"+fifo);
+fifo.shift();
+document.writeln("<br>"+"<br>"+"monitor removed: "+"<br>"+fifo);
+fifo.shift();
+
+// Task # 14
+
+var lifo = [];
+lifo.push("keyboard");
+lifo.push("mouse");
+lifo.push("printer");
+lifo.push("monitor");
+document.writeln(lifo);
+lifo.pop();
+document.writeln("<br>"+"<br>"+"monitor removed: "+"<br>"+lifo);
+lifo.pop();
+document.writeln("<br>"+"<br>"+"printer removed: "+"<br>"+lifo);
+lifo.pop();
+document.writeln("<br>"+"<br>"+"mouse removed: "+"<br>"+lifo);
+lifo.pop();
+document.writeln("<br>"+"<br>"+"keyboard removed: "+"<br>"+lifo);
+lifo.pop();
+
+// Task # 15
+
+var manufacturers = ["Apple"," Samsung"," HTC"," Nokia"," Samsung"];
+document.writeln("Here are some Mobile device manufactures:".bold()+"<br>"+"<br>");
+document.writeln("No.1: "+manufacturers[0]+"<br>");
+document.writeln("No.2: "+manufacturers[1]+"<br>");
+document.writeln("No.3: "+manufacturers[2]+"<br>");
+document.writeln("No.4: "+manufacturers[3]+"<br>");
+document.writeln("No.5: "+manufacturers[4]+"<br>");
+
+/*--------------------------------------------------------------*/
